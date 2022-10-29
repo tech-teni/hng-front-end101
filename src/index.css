@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h3 {
+  font-weight: bold;
+}
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 60%;
+  margin-top: 20px;
+}
+.arrow-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px dashed #d0d5dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container button {
+  width: 100%;
+  padding: 24px 32px;
+  background: #eaecf0;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.button-container a {
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+.socials-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.socials-container img {
+  margin-left: 15px;
+}
+
+footer {
+  margin-top: 70px;
+  width: 100%;
+  border-top: 1px solid rgb(227, 225, 225);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+footer h5 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #667085;
+}
+
+@media screen and (max-width: 567px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  footer h5 {
+    margin: 10px 0px;
+  }
 }
